@@ -691,36 +691,60 @@ section[id] {
   --dot: #f6d7a6;
 }
 
-.jar-morango {
-  --cream: #ffe6ee;
-  --cake: #ffb6cd;
-  --filling: #f2678f;
-  --lid: #c73561;
-  --dot: #fff4f7;
+.jar-branco {
+  --cream: #fffdf7;
+  --cake: #f8ecd4;
+  --filling: #fff6e2;
+  --lid: #e9c9a0;
+  --dot: #dcbf93;
 }
 
-.jar-red {
-  --cream: #fff2f0;
-  --cake: #c93b52;
-  --filling: #fffaf2;
-  --lid: var(--berry);
-  --dot: #ffe1d6;
+.jar-pacoca {
+  --cream: #f3dfbd;
+  --cake: #dfb27a;
+  --filling: #c98a4b;
+  --lid: #a9713a;
+  --dot: #8a5a2b;
+}
+
+.jar-uva {
+  --cream: #fff6e2;
+  --cake: #fffaf0;
+  --filling: #9b6cc4;
+  --lid: #7a4fa3;
+  --dot: #5e3a85;
+}
+
+.jar-prestigio {
+  --cream: #fffaf2;
+  --cake: #6b4232;
+  --filling: #f6efe2;
+  --lid: #5c2a3d;
+  --dot: #3f2733;
 }
 
 .jar-maracuja {
   --cream: #fff3cd;
   --cake: #ffcf6b;
-  --filling: #ffeaf1;
+  --filling: #ffe9a8;
   --lid: #ef9a3d;
   --dot: #7a3b52;
 }
 
-.jar-oreo {
-  --cream: #f2e9e4;
-  --cake: #4a3a35;
-  --filling: #fffaf4;
-  --lid: var(--ink);
-  --dot: #cfc3bd;
+.jar-chocouva {
+  --cream: #b98a6c;
+  --cake: #4a2c20;
+  --filling: #9b6cc4;
+  --lid: #7a4fa3;
+  --dot: #d9c2f0;
+}
+
+.jar-chocomorango {
+  --cream: #ffe6ee;
+  --cake: #4a2c20;
+  --filling: #f2678f;
+  --lid: #c73561;
+  --dot: #fff4f7;
 }
 
 .jar-lid {
@@ -817,6 +841,51 @@ section[id] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(18px, 2.4vw, 26px);
+}
+
+.price-group {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.price-group span {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--pink-600);
+}
+
+.price-group::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dashed var(--pink-200);
+}
+
+.cards + .price-group {
+  margin-top: 48px;
+}
+
+.cards-five {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.cards-five .card {
+  grid-column: span 2;
+}
+
+.cards-five .card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.cards-five .card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 .card {
@@ -1538,6 +1607,16 @@ section[id] {
    Responsivo
    ========================================================= */
 @media (max-width: 1040px) {
+  .cards-five {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-five .card,
+  .cards-five .card:nth-child(4),
+  .cards-five .card:nth-child(5) {
+    grid-column: auto;
+  }
+
   .hero h1 {
     font-size: clamp(2.5rem, 5.8vw, 3.6rem);
   }
@@ -1690,6 +1769,10 @@ section[id] {
 }
 
 @media (max-width: 640px) {
+  .cards-five {
+    grid-template-columns: 1fr;
+  }
+
   .shell {
     width: min(100% - 32px, var(--shell));
   }
