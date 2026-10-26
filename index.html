@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Confeitaria das Meninas — Bolo no pote feito com carinho</title>
+  <meta
+    name="description"
+    content="Bolo no pote artesanal feito por seis meninas que levam doce a sério. Recheio generoso, camadas de carinho e entrega combinada no WhatsApp."
+  />
+  <meta name="theme-color" content="#fff7f9" />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ ÍCONES / ILUSTRAÇÕES ============ -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <symbol id="icon-jar" viewBox="0 0 120 168">
+      <rect x="31" y="8" width="58" height="17" rx="8" class="jar-lid" />
+      <rect x="27" y="21" width="66" height="12" rx="5" class="jar-band" />
+      <rect x="18" y="31" width="84" height="122" rx="22" class="jar-glass" />
+      <clipPath id="jar-clip">
+        <rect x="24" y="37" width="72" height="110" rx="16" />
+      </clipPath>
+      <g clip-path="url(#jar-clip)">
+        <rect x="24" y="37" width="72" height="30" class="jar-cream" />
+        <rect x="24" y="67" width="72" height="27" class="jar-cake" />
+        <rect x="24" y="94" width="72" height="24" class="jar-filling" />
+        <rect x="24" y="118" width="72" height="29" class="jar-cake" />
+        <circle cx="44" cy="52" r="2.4" class="jar-dot" />
+        <circle cx="62" cy="46" r="2" class="jar-dot" />
+        <circle cx="78" cy="55" r="2.6" class="jar-dot" />
+        <circle cx="52" cy="80" r="2" class="jar-dot" />
+        <circle cx="72" cy="86" r="2.4" class="jar-dot" />
+        <circle cx="42" cy="106" r="2.2" class="jar-dot" />
+        <circle cx="66" cy="112" r="2.6" class="jar-dot" />
+        <circle cx="80" cy="132" r="2" class="jar-dot" />
+        <circle cx="46" cy="136" r="2.4" class="jar-dot" />
+      </g>
+      <rect x="29" y="46" width="9" height="64" rx="4.5" class="jar-shine" />
+      <rect x="18" y="31" width="84" height="122" rx="22" class="jar-outline" />
+      <path d="M60 14.5c-4.6-4.7-12.2 1.4-7 7.2l7 6.8 7-6.8c5.2-5.8-2.4-11.9-7-7.2Z" class="jar-heart" />
+    </symbol>
+
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path
+        d="M12 21s-7.6-4.7-9.4-9.2C1 7.9 3.9 4 7.7 4c2 0 3.4 1 4.3 2.4C12.9 5 14.3 4 16.3 4 20.1 4 23 7.9 21.4 11.8 19.6 16.3 12 21 12 21Z"
+        fill="currentColor"
+      />
+    </symbol>
+
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.9 9.9 0 0 0 4.68 1.2h.01c5.43 0 9.84-4.4 9.84-9.84 0-2.63-1.03-5.1-2.9-6.96A9.78 9.78 0 0 0 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.03-.2-.31a8.16 8.16 0 0 1-1.25-4.36c0-4.52 3.68-8.19 8.2-8.19 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.2-8.19 8.2Zm4.5-6.13c-.25-.13-1.47-.72-1.7-.8-.22-.09-.39-.13-.55.12-.16.25-.64.8-.78.97-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"
+      />
+    </symbol>
+
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="topo">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Confeitaria das Meninas — início">
+        <img src="assets/logo.jpeg" alt="" width="48" height="48" class="brand-logo" />
+        <span class="brand-text">
+          <strong>Confeitaria</strong>
+          <span>das Meninas</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#sabores">Sabores</a>
+        <a href="#como-pedir">Como pedir</a>
+        <a href="#sobre">As meninas</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn-sm nav-cta" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20encomendar%20um%20bolo%20no%20pote%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+          Pedir agora
+        </a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot"></span> bolo no pote artesanal · feito à mão
+          </p>
+
+          <h1>
+            Felicidade em camadas,
+            <span class="hl">servida no pote<span class="squiggle" aria-hidden="true"></span></span>
+          </h1>
+
+          <p class="lede">
+            Seis meninas, uma cozinha cheia de música e a missão de deixar o seu dia
+            mais doce. Recheio generoso, colherada de carinho e aquele
+            “só mais um pouquinho” que você conhece bem.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20encomendar%20um%20bolo%20no%20pote%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+              Pedir no WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#sabores">
+              Ver os sabores
+              <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </div>
+
+          <ul class="hero-points">
+            <li><span aria-hidden="true">✓</span> Feito sob encomenda</li>
+            <li><span aria-hidden="true">✓</span> Potes individuais</li>
+            <li><span aria-hidden="true">✓</span> Entrega combinada</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+
+          <div class="polaroid">
+            <div class="polaroid-jar jar-ninho">
+              <svg viewBox="0 0 120 168"><use href="#icon-jar" /></svg>
+            </div>
+            <p class="polaroid-caption">o clássico ninho 🍓</p>
+          </div>
+
+          <div class="art-chip art-chip-a">
+            <span class="chip-emoji">🧁</span>
+            <span>feito hoje<br /><strong>com carinho</strong></span>
+          </div>
+
+          <div class="art-chip art-chip-b">
+            <span class="chip-stars">★★★★★</span>
+            <span>“acabou em 4 minutos”<br /><strong>— cliente real</strong></span>
+          </div>
+
+          <div class="sticker">
+            <svg viewBox="0 0 100 100" class="sticker-ring">
+              <defs>
+                <path id="sticker-circle" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" />
+              </defs>
+              <text>
+                <textPath href="#sticker-circle" startOffset="0">
+                  feito com amor · bolo no pote ·
+                </textPath>
+              </text>
+            </svg>
+            <span class="sticker-heart">❤</span>
+          </div>
+
+          <span class="float float-1">🍓</span>
+          <span class="float float-2">✨</span>
+          <span class="float float-3">🍫</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>bolo no pote</span><i>♥</i>
+        <span>feito à mão</span><i>♥</i>
+        <span>recheio generoso</span><i>♥</i>
+        <span>amor em camadas</span><i>♥</i>
+        <span>seis meninas</span><i>♥</i>
+        <span>doce de verdade</span><i>♥</i>
+        <span>bolo no pote</span><i>♥</i>
+        <span>feito à mão</span><i>♥</i>
+        <span>recheio generoso</span><i>♥</i>
+        <span>amor em camadas</span><i>♥</i>
+        <span>seis meninas</span><i>♥</i>
+        <span>doce de verdade</span><i>♥</i>
+      </div>
+    </div>
+
+    <!-- ============ SABORES ============ -->
+    <section class="section flavors" id="sabores">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> o cardápio</p>
+          <h2>Escolha o seu <em>pote de felicidade</em></h2>
+          <p class="section-lede">
+            Os sabores giram conforme a inspiração da semana — mas esses aqui são
+            presença garantida. Quer o cardápio atualizado? A Jay manda no WhatsApp.
+          </p>
+        </div>
+
+        <div class="cards">
+          <!-- card 1 -->
+          <article class="card reveal" style="--d: 0ms">
+            <span class="tag">mais pedido</span>
+            <div class="card-jar jar-ninho">
+              <svg viewBox="0 0 120 168" role="img" aria-label="Ilustração de bolo no pote de ninho com morango"><use href="#icon-jar" /></svg>
+            </div>
+            <h3>Ninho com Morango</h3>
+            <p>Massa branquinha, creme de leite ninho e morangos fresquinhos. O clássico que nunca decepciona ninguém.</p>
+            <a class="card-link" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20pedir%20o%20sabor%20Ninho%20com%20Morango%20%F0%9F%8D%93" target="_blank" rel="noopener">
+              Quero esse <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </article>
+
+          <!-- card 2 -->
+          <article class="card reveal" style="--d: 60ms">
+            <div class="card-jar jar-choco">
+              <svg viewBox="0 0 120 168" role="img" aria-label="Ilustração de bolo no pote de chocolate"><use href="#icon-jar" /></svg>
+            </div>
+            <h3>Chocolate Belga</h3>
+            <p>Massa de cacau, ganache meio amarga e aquele brigadeiro que arranca um “hmmm” involuntário.</p>
+            <a class="card-link" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20pedir%20o%20sabor%20Chocolate%20Belga%20%F0%9F%8D%AB" target="_blank" rel="noopener">
+              Quero esse <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </article>
+
+          <!-- card 3 -->
+          <article class="card reveal" style="--d: 120ms">
+            <span class="tag tag-alt">novidade</span>
+            <div class="card-jar jar-morango">
+              <svg viewBox="0 0 120 168" role="img" aria-label="Ilustração de bolo no pote de morango"><use href="#icon-jar" /></svg>
+            </div>
+            <h3>Morango do Amor</h3>
+            <p>Camadas de morango, creme suave e uma cobertura rosé que é basicamente um abraço em forma de doce.</p>
+            <a class="card-link" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20pedir%20o%20sabor%20Morango%20do%20Amor%20%F0%9F%92%97" target="_blank" rel="noopener">
+              Quero esse <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </article>
+
+          <!-- card 4 -->
+          <article class="card reveal" style="--d: 0ms">
+            <div class="card-jar jar-red">
+              <svg viewBox="0 0 120 168" role="img" aria-label="Ilustração de bolo no pote red velvet"><use href="#icon-jar" /></svg>
+            </div>
+            <h3>Red Velvet</h3>
+            <p>Massa aveludada, cream cheese geladinho e um toque de drama na cor. Puro charme, zero modéstia.</p>
+            <a class="card-link" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20pedir%20o%20sabor%20Red%20Velvet%20%E2%9D%A4%EF%B8%8F" target="_blank" rel="noopener">
+              Quero esse <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </article>
+
+          <!-- card 5 -->
+          <article class="card reveal" style="--d: 60ms">
+            <div class="card-jar jar-maracuja">
+              <svg viewBox="0 0 120 168" role="img" aria-label="Ilustração de bolo no pote de maracujá com ninho"><use href="#icon-jar" /></svg>
+            </div>
+            <h3>Maracujá com Ninho</h3>
+            <p>Azedinho na medida, doce no lugar certo. O equilíbrio que a sua sobremesa estava pedindo.</p>
+            <a class="card-link" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20pedir%20o%20sabor%20Maracuj%C3%A1%20com%20Ninho%20%F0%9F%92%9B" target="_blank" rel="noopener">
+              Quero esse <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </article>
+
+          <!-- card 6 -->
+          <article class="card reveal" style="--d: 120ms">
+            <div class="card-jar jar-oreo">
+              <svg viewBox="0 0 120 168" role="img" aria-label="Ilustração de bolo no pote de oreo com ninho"><use href="#icon-jar" /></svg>
+            </div>
+            <h3>Oreo &amp; Ninho</h3>
+            <p>Camadas de creme, pedacinhos de biscoito e a promessa de que o pote vai acabar rápido demais.</p>
+            <a class="card-link" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20pedir%20o%20sabor%20Oreo%20%26%20Ninho%20%F0%9F%8D%AA" target="_blank" rel="noopener">
+              Quero esse <svg class="ico" aria-hidden="true"><use href="#icon-arrow" /></svg>
+            </a>
+          </article>
+        </div>
+
+        <p class="flavors-note reveal">
+          Também rola <strong>kit festa</strong> e <strong>lembrancinha personalizada</strong>.
+          <a href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20saber%20sobre%20kits%20para%20festa%20%F0%9F%8E%89" target="_blank" rel="noopener">Pergunta pra Jay</a>
+          — ela adora um projeto novo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ COMO PEDIR ============ -->
+    <section class="section how" id="como-pedir">
+      <div class="shell">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="dot"></span> simples assim</p>
+          <h2>Do WhatsApp para o <em>pote</em> em 3 passos</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" style="--d: 0ms">
+            <span class="step-num">01</span>
+            <h3>Escolha os sabores</h3>
+            <p>Chama a Jay no WhatsApp e receba o cardápio do dia. Pode misturar sabores, ninguém aqui julga.</p>
+          </li>
+          <li class="step reveal" style="--d: 120ms">
+            <span class="step-num">02</span>
+            <h3>Combine data e entrega</h3>
+            <p>Retirada ou entrega combinada, no horário que funciona pra você. A gente se organiza direitinho.</p>
+          </li>
+          <li class="step reveal" style="--d: 240ms">
+            <span class="step-num">03</span>
+            <h3>Abra o pote e sorria</h3>
+            <p>Chega geladinho, bonito e pronto pra primeira colherada. Depois disso, a culpa é sua.</p>
+          </li>
+        </ol>
+
+        <div class="how-cta reveal">
+          <a class="btn btn-primary" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20fazer%20um%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+            Começar meu pedido
+          </a>
+          <p class="how-cta-note">Sem formulário, sem cadastro. Só uma conversa boa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section about" id="sobre">
+      <div class="shell about-grid">
+        <div class="about-art reveal">
+          <div class="about-frame">
+            <img src="assets/logo.jpeg" alt="Logo da Confeitaria das Meninas, com batedeira rosa e corações" width="560" height="560" loading="lazy" />
+          </div>
+          <span class="float float-about" aria-hidden="true">🧁</span>
+        </div>
+
+        <div class="about-copy reveal" style="--d: 120ms">
+          <p class="eyebrow"><span class="dot"></span> quem faz acontecer</p>
+          <h2>Seis meninas, um potinho <em>e zero modéstia</em></h2>
+          <p>
+            A Confeitaria das Meninas começou como tantas boas ideias: uma conversa
+            animada, uma receita de família e a certeza de que doce bom é doce
+            feito com calma. Hoje somos seis — e cada uma tem seu papel nessa
+            bagunça organizada.
+          </p>
+          <p>
+            Testamos, provamos, ajustamos e (quase sempre) resistimos à tentação
+            de comer tudo antes de entregar. O resultado é um bolo no pote honesto,
+            bonito e generoso — do tipo que faz a pessoa mandar áudio de
+            “gente, que delícia” no grupo da família.
+          </p>
+
+          <ul class="names" aria-label="Time da confeitaria">
+            <li>Ana K.</li>
+            <li>Dafiny</li>
+            <li>Erika</li>
+            <li>Grazielly</li>
+            <li>Jayanne</li>
+            <li>Jeniffer</li>
+          </ul>
+
+          <p class="signature">com carinho, <span>as meninas</span> ❤</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="section reviews" id="depoimentos">
+      <div class="shell">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="dot"></span> quem já provou</p>
+          <h2>Recados que a gente <em>guarda no coração</em></h2>
+        </div>
+
+        <div class="review-grid">
+          <figure class="review reveal" style="--d: 0ms">
+            <div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>
+              “Pedi pra testar e acabei pedindo mais três no mesmo dia. O de ninho
+              com morango é perigoso: não existe ‘vou deixar pra amanhã’.”
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">C</span>
+              <span>Camila R.<small>cliente desde o começo</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review reveal" style="--d: 100ms">
+            <div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>
+              “Levei pro escritório e virei a pessoa mais popular do andar por
+              exatamente 12 minutos. Depois o pote acabou.”
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">B</span>
+              <span>Bruno M.<small>pedido para o time</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review reveal" style="--d: 200ms">
+            <div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>
+              “Além de lindo, vem bem servido. A Jay responde rápido, explica tudo
+              e ainda manda dica de conservar (que eu ignorei).”
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">L</span>
+              <span>Letícia S.<small>fã do red velvet</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="duvidas">
+      <div class="shell faq-grid">
+        <div class="faq-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> antes de pedir</p>
+          <h2>Dúvidas <em>frequentes</em></h2>
+          <p class="section-lede">
+            Se ficou alguma pergunta sem resposta, é só chamar. A Jay responde
+            no WhatsApp — e sim, ela é tão simpática quanto o bolo.
+          </p>
+          <a class="btn btn-ghost" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20bolo%20no%20pote%20%F0%9F%99%8B" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+            Tirar dúvida no WhatsApp
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal" style="--d: 0ms">
+            <summary>Quanto custa cada pote?</summary>
+            <p>
+              Os valores variam conforme o sabor, o tamanho e a quantidade. Chama a
+              Jay no WhatsApp que ela envia o cardápio atualizado com os preços do dia.
+            </p>
+          </details>
+
+          <details class="faq-item reveal" style="--d: 60ms">
+            <summary>Preciso encomendar com antecedência?</summary>
+            <p>
+              Sim! Trabalhamos sob encomenda: potes avulsos pedem cerca de 48 horas e
+              encomendas maiores (festas e lembrancinhas) pelo menos 3 dias.
+            </p>
+          </details>
+
+          <details class="faq-item reveal" style="--d: 120ms">
+            <summary>Vocês entregam ou é só retirada?</summary>
+            <p>
+              Fazemos as duas coisas. A entrega é combinada no WhatsApp, com endereço,
+              data e horário definidos antes do pedido ser fechado.
+            </p>
+          </details>
+
+          <details class="faq-item reveal" style="--d: 180ms">
+            <summary>Tem opção sem glúten ou sem lactose?</summary>
+            <p>
+              Ainda não temos versões adaptadas no cardápio fixo. Mas conta pra gente
+              a sua necessidade: dependendo da demanda, a gente estuda uma versão especial.
+            </p>
+          </details>
+
+          <details class="faq-item reveal" style="--d: 240ms">
+            <summary>Quanto tempo dura o bolo no pote?</summary>
+            <p>
+              O ideal é manter na geladeira e consumir em até 3 dias. Na prática,
+              ninguém aqui em casa conseguiu esperar tanto — mas a recomendação oficial é essa.
+            </p>
+          </details>
+
+          <details class="faq-item reveal" style="--d: 300ms">
+            <summary>Fazem kits para festa e lembrancinhas?</summary>
+            <p>
+              Fazemos! Kits de aniversário, lembrancinhas personalizadas e encomendas
+              para eventos. Fale com a Jay com a data e a quantidade que a gente monta uma proposta.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section final" id="pedido">
+      <div class="shell">
+        <div class="final-card reveal">
+          <span class="final-heart" aria-hidden="true">❤</span>
+          <p class="eyebrow light"><span class="dot"></span> última colherada de convencimento</p>
+          <h2>Bora adoçar o dia <em>com a gente?</em></h2>
+          <p>
+            Manda um “oi” pra Jay, conta a data e escolhe os sabores.
+            O resto é com as meninas — e o potinho faz o resto sozinho.
+          </p>
+          <div class="final-actions">
+            <a class="btn btn-light" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Vim%20pelo%20site%20e%20quero%20encomendar%20um%20bolo%20no%20pote%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+              Chamar a Jay · +55 42 8888-1278
+            </a>
+          </div>
+          <p class="final-note">Atendimento pelo WhatsApp · resposta rapidinha</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.jpeg" alt="" width="56" height="56" loading="lazy" />
+        <div>
+          <strong>Confeitaria das Meninas</strong>
+          <p>Bolo no pote artesanal, feito por seis meninas que amam o que fazem.</p>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#sabores">Sabores</a>
+        <a href="#como-pedir">Como pedir</a>
+        <a href="#sobre">As meninas</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+
+      <div class="footer-contact">
+        <a class="footer-wa" href="https://wa.me/554288881278" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+          +55 42 8888-1278 <span>(Jay)</span>
+        </a>
+        <a class="footer-insta" href="https://www.instagram.com/confeitariadasmeninas" target="_blank" rel="noopener">@confeitariadasmeninas</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>© <span id="year">2026</span> Confeitaria das Meninas. Todos os direitos reservados.</p>
+      <p>Feito com farinha, morango e bastante carinho.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/554288881278?text=Oi%2C%20Jay!%20Quero%20encomendar%20um%20bolo%20no%20pote%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="Falar com a Jay no WhatsApp">
+    <svg aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+    <span class="wa-float-text">Pedir no WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
