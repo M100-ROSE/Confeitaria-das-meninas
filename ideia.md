@@ -6,8 +6,6 @@ senntimento a ser transmitido, leveza levemente engraçada e bonito
 cores principais: tons de rosa, foco em rosa pastel
 
 sabores (15 reais):
-chocolate preto
-chocolate branco
 paçoca
 ninho com uva
 prestigio 

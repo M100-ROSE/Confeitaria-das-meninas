@@ -691,14 +691,6 @@ section[id] {
   --dot: #f6d7a6;
 }
 
-.jar-branco {
-  --cream: #fffdf7;
-  --cake: #f8ecd4;
-  --filling: #fff6e2;
-  --lid: #e9c9a0;
-  --dot: #dcbf93;
-}
-
 .jar-pacoca {
   --cream: #f3dfbd;
   --cake: #dfb27a;
@@ -870,22 +862,6 @@ section[id] {
 
 .cards + .price-group {
   margin-top: 48px;
-}
-
-.cards-five {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.cards-five .card {
-  grid-column: span 2;
-}
-
-.cards-five .card:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.cards-five .card:nth-child(5) {
-  grid-column: 4 / span 2;
 }
 
 .card {
@@ -1607,16 +1583,6 @@ section[id] {
    Responsivo
    ========================================================= */
 @media (max-width: 1040px) {
-  .cards-five {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cards-five .card,
-  .cards-five .card:nth-child(4),
-  .cards-five .card:nth-child(5) {
-    grid-column: auto;
-  }
-
   .hero h1 {
     font-size: clamp(2.5rem, 5.8vw, 3.6rem);
   }
@@ -1769,10 +1735,6 @@ section[id] {
 }
 
 @media (max-width: 640px) {
-  .cards-five {
-    grid-template-columns: 1fr;
-  }
-
   .shell {
     width: min(100% - 32px, var(--shell));
   }
